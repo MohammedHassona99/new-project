@@ -6,12 +6,17 @@
 
 body {
   font-family: "Work Sans", sans-serif;
+  height: 4000px;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
+}
+
+:root {
+  --main-color: #10cab7;
 }
 
 /* Media Query */
@@ -50,6 +55,11 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .logo,
+header .icon:hover {
+  cursor: pointer;
 }
 
 header .links {
@@ -140,4 +150,37 @@ header .links:hover ul {
 }
 
 /* End Header */
+/* Start Landing section */
+.landing-page {
+  padding: 20px 0;
+  background-image: url("./../images/landing-page.jpg");
+  background-size: cover;
+  height: calc(100vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.landing-page .intro-text h1 {
+  color: var(--main-color);
+  font-weight: bold;
+  margin: 0;
+  background-color: #3d3c3c;
+  border-radius: 5px;
+  font-size: 50px;
+}
+
+.landing-page .intro-text p {
+  line-height: 1.7;
+  font-size: 30px;
+}
+
+/* End Landing section */
 /*# sourceMappingURL=main.css.map */
