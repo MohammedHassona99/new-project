@@ -4,13 +4,16 @@
 }
 body {
   font-family: "Work Sans", sans-serif;
+  height: 4000px;
 }
 .container {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
 }
-
+:root {
+  --main-color: #10cab7;
+}
 /* Media Query */
 // Small
 @media (min-width: 768px) {
@@ -38,6 +41,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .logo,
+  .icon:hover {
+    cursor: pointer;
   }
   .links {
     position: relative;
@@ -107,3 +114,30 @@ header {
   }
 }
 /* End Header */
+
+/* Start Landing section */
+.landing-page {
+  padding: 20px 0;
+  background-image: url("./../images/landing-page.jpg");
+  background-size: cover;
+  height: calc(100vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .intro-text {
+    h1 {
+      color: var(--main-color);
+      font-weight: bold;
+      margin: 0;
+      background-color: rgb(61, 60, 60);
+      border-radius: 5px;
+      font-size: 50px;
+    }
+    p {
+      line-height: 1.7;
+      font-size: 30px;
+    }
+  }
+}
+/* End Landing section */
